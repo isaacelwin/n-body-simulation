@@ -33,7 +33,7 @@ This project simulates N point masses interacting through Newtonian gravity:
 
 Each body follows Newtonian gravity, with a softening term $\epsilon$ added to avoid division by zero
 
-$$\mathbf{F}_{ij} = G \, \frac{m_i m_j}{|\mathbf{r}_j - \mathbf{r}_i|^2} \, \hat{\mathbf{r}}_{ij}, \qquad \hat{\mathbf{r}}_{ij} = \frac{\mathbf{r}_j - \mathbf{r}_i}{|\mathbf{r}_j - \mathbf{r}_i|}$$
+$$\mathbf{F}_{ij} = G \, \frac{m_i m_j \, (\mathbf{r}_j - \mathbf{r}_i)}{\left(|\mathbf{r}_j - \mathbf{r}_i|^2 + \epsilon^2\right)^{3/2}}, \qquad \hat{\mathbf{r}}_{ij} = \frac{\mathbf{r}_j - \mathbf{r}_i}{|\mathbf{r}_j - \mathbf{r}_i|}$$
 
 - The displacement vectors for all pairs are constructed at once as an (N, N, 3) array, then collapsed to give the acceleration for each body
 - Positions and velocities are flattened into a single state vector so that 'solve_ivp' can integrate them, with the derivative function returning the velocity and acceleration
