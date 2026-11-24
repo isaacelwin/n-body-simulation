@@ -17,17 +17,17 @@ This project simulates N point masses interacting through Newtonian gravity:
 - **Trajectories**: 3D animation of the 3-body system, with parameters currently set to form a stable figure of eight loop
 
   *Trajectories:*
-  ![]()
+  ![Trajectories](trajectories.gif)
 
 - **Relative energy error**: For the 3-body system demonstrated in the code, the simulation reaches a maximum relative energy error of ~8e-10
 
   *Relative energy error:*
-   ![]()
+   ![Relative energy error](relative_energy_error.png)
 
-- **Angular momentum conservation**: All components of the angular momentum vector remain constant to within the tolerances of the solver, and the   centre of mass stays fixed
+- **Conservation of angular momentum**: All components of the angular momentum vector remain constant to within the tolerances of the solver, and the   centre of mass stays fixed
 
-  *Angular momentum conservation:*
-   ![]()
+  *Conservation of angular momentum:*
+   ![Angular momentum](angular_momentum.png)
 
 ## Method
 
