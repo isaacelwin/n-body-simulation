@@ -17,6 +17,7 @@ This project simulates N point masses interacting through Newtonian gravity:
 - **Trajectories**: 3D animation of the 3-body system, with parameters currently set to form a stable figure of eight loop
 
   *Trajectories:*
+  
   ![Trajectories](trajectories.gif)
 
 - **Relative energy error**: For the 3-body system demonstrated in the code, the simulation reaches a maximum relative energy error of ~8e-10
